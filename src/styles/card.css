@@ -1,0 +1,74 @@
+.card {
+    text-align: left;
+    margin: auto auto;
+    font-size: 4rem;
+    box-shadow: 0px 0px 100px rgba(0,0,0,0.25);
+    width: 500px;
+    border: 2px solid;
+    border-radius: 4px;
+    border-left: 2px solid;
+    border-right: 2px solid;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: 552px) {
+    .card {
+        border-radius: 0px;
+        border-left: none;
+        border-right: none;
+    }
+}
+
+.hero {
+    height: 100vh;
+    display: flex;
+    align-content: center;
+}
+
+.card > .title > h1 {
+    /* text-decoration: underline; */
+    font-size: 2rem;
+}
+
+.card > .title > span {
+    color: rgba(127,127,127,0.5);
+    font-size: 2rem;
+    text-align: right;
+    transition: color 0.5s ease;
+}
+
+.card > .title > span:hover {
+    color: rgba(127,127,127,1);
+}
+
+.card > .title {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px; 
+}
+
+.card > .text > p {
+    font-size: 2rem;
+}
+
+.card > a {
+    text-align: left;
+    text-decoration: none;
+    font-size: 2rem;
+    color: var(--pri-1);
+    letter-spacing: normal;
+    transition: letter-spacing .25s ease;
+}
+
+.card > a:hover {
+    text-decoration: underline;
+    letter-spacing: 0.025rem;
+}
+
+.card > .smaller > p {
+    font-size: 1.5rem;
+}
