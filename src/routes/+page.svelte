@@ -15,6 +15,9 @@
 </script>
 
 <svelte:head>
+    <title>
+        rocks.realfx//0x726C6678
+    </title>
     <link rel="preload" href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,800;1,400;1,800&display=swap" as="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,800;1,400;1,800&display=swap">
 </svelte:head>
