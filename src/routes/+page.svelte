@@ -1,10 +1,7 @@
-<script lang="ts">
+<script>
+    //@ts-nocheck
 
-    import "./../styles/global.css";
-    import "./../styles/card.css";
-
-    const calculateAge = (birthday : any) => {
-        //@ts-ignore
+    const calculateAge = (birthday) => {
         var years = new Date(new Date() - new Date(birthday)).getFullYear() - 1970;
         return years;
     }
@@ -16,30 +13,80 @@
 
 <svelte:head>
     <title>
-        rocks.realfx//0x726C6678
+        736F6D6574696D65
     </title>
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,800;1,400;1,800&display=swap" as="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,800;1,400;1,800&display=swap">
 </svelte:head>
 
-<div id="app" class="fill">
-    <div class="hero fill">
-        <div class="card">
-            <div class="title">
-                <h1 title="She/They/Fae">
-                    I'm Sometime.
-                </h1>
-                <!-- <span>
-                    More Down
-                    &darr;
-                </span> -->
-            </div>
-            <div class="text">
-                <p id="age">
-                    I'm a {x} year old student,
-                    And I like to do web development in my free time.
+<div class="app">
+    <fieldset title="She/They/Fae">
+        <legend>
+            I'm sometime!
+        </legend>
+        <p>
+            I'm a {x} year old dummy who likes to try web development in my free time !!
+        </p>
+    </fieldset>
+    <fieldset>
+        <legend>
+            Where u find me
+        </legend>
+        <ul>
+            <li>
+                <a href="https://github.com/RealFX-Code">
+                    Github
+                </a>
+                <p>
+                    <small>
+                        some times when i make something cool on the computer i put it here
+                    </small>
                 </p>
-            </div>
-        </div>
-    </div>
+            </li>
+            <li>
+                <a href="https://www.last.fm/user/sometimee">
+                    Last.fm
+                </a>
+                <p>
+                    <small>
+                        i like music :3
+                    </small>
+                </p>
+            </li>
+            <li>
+                <a href="https://twitter.com/RealFX6">
+                    Twitter
+                </a>
+                <p>
+                    <small>
+                        i don't use twitter
+                    </small>
+                </p>
+            </li>
+        </ul>
+    </fieldset>
 </div>
+
+<style>
+
+    .app {
+        width: fit-content;
+        margin: 0 auto;
+    }
+
+    li > p {
+        margin: 0px 0px 0px 0px;
+    }
+
+    li {
+        margin: 1rem 0;
+    }
+
+    ul {
+        list-style-type: none;
+    }
+
+    fieldset {
+        border: 1px solid black;
+        margin: 24px 0;
+    }
+
+</style>
