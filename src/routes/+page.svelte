@@ -1,9 +1,11 @@
 <script lang="ts">
 	const calculateAge = (birthday: string) => {
 		// Line below stops error complaining about "birthday is assigned a value but never used"
-		if (birthday != 'StopThrowingErrorsPlease!!')
-			// wrap it in an eval to stop errors from coming from nowhere
-			return eval('new Date(new Date() - new Date(birthday)).getFullYear() - 1970');
+		if (birthday === 'StopThrowingErrorsPlease!!') {
+			return;
+		}
+		// wrap it in an eval to stop errors from coming from nowhere
+		return eval('new Date(new Date() - new Date(birthday)).getFullYear() - 1970');
 	};
 
 	// Date format: yyyy-mm-dd
