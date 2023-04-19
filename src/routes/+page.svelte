@@ -1,11 +1,12 @@
 <script>
+	import FullscreenSection from '../components/FullscreenSection.svelte';
 
 	const calculateAge = (birthday) => {
 		return new Date(new Date() - new Date(birthday)).getFullYear() - 1970;
 	};
 
-	// Date format: yyyy-mm-dd
-	let x = calculateAge('2008-04-01');
+	// Date format: yyyy-mm-dd ( Add one day bcs calculation is slightly off. )
+	let x = calculateAge('2008-04-02');
 </script>
 
 <svelte:head>
@@ -13,57 +14,77 @@
 </svelte:head>
 
 <div class="app">
-	<fieldset title="She/They/Fae">
-		<legend> I'm sometime! </legend>
-		<p>
-			I'm a {x} year old dummy who likes to try web development in my free time !!
-		</p>
-	</fieldset>
-	<fieldset>
-		<legend> Where u find me </legend>
-		<ul>
-			<li>
-				<a href="https://github.com/RealFX-Code"> Github </a>
-				<p>
-					<small> some times when i make something cool on the computer i put it here </small>
-				</p>
-			</li>
-			<li>
-				<a href="https://www.last.fm/user/sometimee"> Last.fm </a>
-				<p>
-					<small> i like music :3 </small>
-				</p>
-			</li>
-			<li>
-				<a href="https://twitter.com/RealFX6"> Twitter </a>
-				<p>
-					<small> i don't use twitter </small>
-				</p>
-			</li>
-		</ul>
-	</fieldset>
+	<FullscreenSection
+		centerContent="true"
+		background="linear-gradient(225deg, rgba(36,36,36,0.25) 0%, rgba(255,119,170,0.1) 50%, rgba(36,36,36,0.25) 100%)"
+	>
+		<h1>
+			I'm <span class="bold" id="sometime-span">sometime</span>.
+		</h1>
+	</FullscreenSection>
+	<FullscreenSection
+		centerContent="true"
+		background="linear-gradient(180deg, rgba(255,119,170,0.03) 0%, rgba(1,2,3,1) 100%)"
+	>
+		<h2>
+			I'm a {x} year old kid who plays around with
+			<span class="item">web-development</span>,
+			<span class="item">Linux</span>, and <span class="item">Gaming</span> in my free-time.
+		</h2>
+	</FullscreenSection>
+	<FullscreenSection
+		centerContent="true"
+		background="linear-gradient(190deg, rgba(1,2,3,1) 0%, rgba(255,119,170,0.1) 100%)"
+	>
+		<h2>
+			Check out some of what I've done <a href="/projects">Here</a>!
+		</h2>
+	</FullscreenSection>
 </div>
 
 <style>
 	.app {
-		width: fit-content;
-		margin: 0 auto;
+		padding: 0px;
+		margin: 0px;
+		background-color: black;
 	}
 
-	li > p {
-		margin: 0px 0px 0px 0px;
+	h1 {
+		color: white;
+		font-weight: 400;
+		font-size: 5rem;
 	}
 
-	li {
-		margin: 1rem 0;
+	h1 > span.bold {
+		font-weight: 400;
+		transition: font-weight ease 0.25s, margin ease 0.5s;
 	}
 
-	ul {
-		list-style-type: none;
+	h1 > span.bold:hover {
+		font-weight: 700;
+		margin: 0px 0.75rem;
 	}
 
-	fieldset {
-		border: 1px solid black;
-		margin: 24px 0;
+	h2 {
+		font-weight: 400;
+		margin: 0px 10rem;
+		color: white;
+	}
+
+	span.item {
+		font-weight: 700;
+		transition: color 0.25s ease, text-shadow 0.5s ease;
+	}
+
+	span.item:hover {
+		color: #ff77aa;
+		text-shadow: #ff77aa77 0px 0px 10px;
+	}
+
+	a,
+	a:visited {
+		text-decoration-color: #ffffff;
+		color: #ffffff;
+		transition: letter-spacing 0.25s ease;
 	}
 </style>
