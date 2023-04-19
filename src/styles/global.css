@@ -1,7 +1,7 @@
 @font-face {
 	font-family: 'Mona-Sans';
-	src: url('/assets/fonts/Mona-Sans.woff2') format('woff2'),
-		url('/assets/fonts/Mona-Sans.woff') format('woff');
+	src: url('https://www.realfx.rocks/assets/fonts/Mona-Sans.woff2') format('woff2'),
+		url('https://www.realfx.rocks/assets/fonts/Mona-Sans.woff') format('woff');
 }
 
 * {
