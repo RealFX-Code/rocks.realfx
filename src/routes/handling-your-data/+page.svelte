@@ -8,9 +8,12 @@
 		background="linear-gradient(65deg, rgba(36,36,36,0.25) 0%, rgba(255,255,255,0.1) 50%, rgba(36,36,36,0.25) 100%)"
 	>
 		<div class="content">
-			<h1>
-				I use some <span class="bold">tracking</span>.
-			</h1>
+            <div class="title">
+                <h1>
+                    I use some
+                    <span class="bold">tracking</span>
+                </h1>
+            </div>
 			<div class="hrule">
 				<hr />
 			</div>
@@ -106,6 +109,22 @@
 		font-weight: 400;
 		font-size: 5rem;
 	}
+    
+    @media screen and (max-width: 1600px) {
+        .title > h1 {
+            display: flex !important;
+            flex-direction: column !important;
+        }
+    }
+
+    .title > h1 {
+        display: block;
+    }
+
+    .title > h1 > span.bold {
+        justify-self: left;
+        width: fit-content;
+    }
 
 	h1 > span.bold {
 		font-weight: 400;
