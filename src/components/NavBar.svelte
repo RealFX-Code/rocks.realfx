@@ -1,5 +1,7 @@
 <script lang="ts">
 
+    import {onMount} from "svelte";
+
     interface INavBarLink {
         friendlyName : String,
         href         : String
@@ -16,17 +18,43 @@
         }
     ];
 
+    let path;
+
+    onMount(function(){
+        path = window.location.pathname
+    });
+
+    function handlePageClick(e){
+        path = e.view.location.pathname;
+    }
+
 </script>
+
+<svelte:window on:click={handlePageClick} />
 
 <div class="navbar">
     <div class="links">
         {#each NavBarLinks as NavBarLink}
-            <a class="link" href={NavBarLink.href}>{NavBarLink.friendlyName}</a>
+            <a
+                data-sveltekit-reload
+                class="link {path === NavBarLink.href ? "active" : ""}"
+                href={NavBarLink.href}
+            >
+                {NavBarLink.friendlyName}
+            </a>
         {/each}
     </div>
 </div>
 
 <style>
+
+    a.active {
+        text-decoration-line: underline;
+    }
+
+    a {
+        text-decoration-line: none;
+    }
 
     div.navbar {
         padding: 16px;
