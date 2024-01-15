@@ -13,21 +13,27 @@
     </style>
 </svelte:head>
 
-<section>
+<div class="content-container">
     <NavBar />
-    <div class="content">
+    <section class="main">
         <slot />
-    </div>
+    </section>
     <Footer />
-</section>
+</div>
 
 <style>
 
+    div.content-container,
     section {
         margin: 0px;
         padding: 0px;
         width: 100%;
         height: 100%;
+    }
+
+    section.main {
+        width: 85vmin;
+        margin: 0 auto;
     }
 
 </style>
