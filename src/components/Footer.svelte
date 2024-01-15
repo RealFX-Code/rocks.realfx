@@ -6,7 +6,7 @@
 
 <footer>
     <div class="grid grid-2-horiz">
-        <h1>
+        <h1 id="webname">
             <strong>
                 www.realfx.rocks
             </strong>
@@ -79,6 +79,21 @@
         height: fit-content;
         width: fit-content;
         margin: auto auto;
+    }
+
+    @media only screen and (max-width: 600px) {
+        h1#webname {
+            display: none;
+        }
+        .grid-2-horiz {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr;
+            grid-auto-columns: 1fr;
+            gap: 0px 0px;
+            grid-auto-flow: row;
+            grid-template-areas: ".";
+        }
     }
 
 </style>
