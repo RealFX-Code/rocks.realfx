@@ -3,8 +3,8 @@
     import {onMount} from "svelte";
 
     interface INavBarLink {
-        friendlyName : String,
-        href         : String
+        friendlyName : string,
+        href         : string
     };
 
     let LeftAlignNavBarLinks : Array<INavBarLink> = [
@@ -29,13 +29,13 @@
         }
     ];
 
-    let path;
+    let path: string;
 
     onMount(function(){
         path = window.location.pathname
     });
 
-    function handlePageClick(e){
+    function handlePageClick(e : any){
         path = e.view.location.pathname;
     }
 

@@ -20,6 +20,7 @@ const linksDefined : Array<linkDefinition> = [
 ]
 
 /** @type {import('./$types').RequestHandler} */
+//@ts-ignore
 export async function GET({params}) {
 
   let redirectURL = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
