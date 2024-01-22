@@ -10,12 +10,11 @@
 		</p>
 		<small>Published: {data.date}</small>
 	</section>
-	<hr>
+	<hr />
 	<svelte:component this={data.content} />
 </article>
 
 <style>
-
 	h1.title {
 		font-size: 10vmin;
 	}
@@ -29,10 +28,9 @@
 	}
 
 	article > hr {
-  		height: 1px;
-  		border: 0;
-  		border-top: 1px solid var(--fg-1);
-  		margin: 1em 0;
+		height: 1px;
+		border: 0;
+		border-top: 1px solid var(--fg-1);
+		margin: 1em 0;
 	}
-
 </style>

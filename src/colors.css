@@ -1,30 +1,28 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,500;0,700;1,500;1,700&display=swap'); */
 :root {
+	--bg-1: #242424;
+	--bg-2: #121212;
 
-    --bg-1: #242424;
-    --bg-2: #121212;
-
-    --fg-1: #afafaf;
-    --fg-2: #8c8c8c;
-
+	--fg-1: #afafaf;
+	--fg-2: #8c8c8c;
 }
 
 * {
-    font-family: "Atkinson Hyperlegible", 'Raleway', sans-serif;
-    color: var(--fg-1);
+	font-family: 'Atkinson Hyperlegible', 'Raleway', sans-serif;
+	color: var(--fg-1);
 }
 
 body {
-    background-color: var(--bg-1);
+	background-color: var(--bg-1);
 }
 
 @media (prefers-color-scheme: light) {
-    /* why didn't I think of this before */
-    :root {
-        --fg-1: #242424;
-        --fg-2: #121212;
+	/* why didn't I think of this before */
+	:root {
+		--fg-1: #242424;
+		--fg-2: #121212;
 
-        --bg-1: #f8f8f8;
-        --bg-2: #dfdfdf;
-    }
+		--bg-1: #f8f8f8;
+		--bg-2: #dfdfdf;
+	}
 }

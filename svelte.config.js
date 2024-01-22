@@ -6,18 +6,14 @@ import { mdsvex } from 'mdsvex';
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
-
-	extensions: [
-		".svelte",
-		".md"
-	],
+	extensions: ['.svelte', '.md'],
 
 	// Consult https://kit.svelte.dev/docs/integrations#preprocessors
 	// for more information about preprocessors
 	preprocess: [
 		preprocess(),
 		mdsvex({
-			extensions: [".md"]
+			extensions: ['.md']
 		})
 	],
 

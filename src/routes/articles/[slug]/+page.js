@@ -6,7 +6,7 @@ export async function load({ params }) {
 	return {
 		content,
 		title,
-        desc,
+		desc,
 		date
 	};
 }
