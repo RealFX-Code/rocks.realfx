@@ -41,7 +41,7 @@
     footer {
         box-shadow: 0px -5px 96px 0px var(--bg-2);
         padding: 2.5rem 0px;
-        margin: 5rem 0px;
+        margin: 5rem 0px 0px 0px;
         width: 100%;
         height: fit-content;
         background-color: var(--bg-2);

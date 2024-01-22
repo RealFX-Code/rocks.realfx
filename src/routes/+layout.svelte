@@ -8,6 +8,26 @@
 </script>
 
 <svelte:head>
+
+    <title>www.realfx.rocks</title>
+
+    <link rel="preconnect"
+        href="https://fonts.googleapis.com"
+        crossorigin />
+    <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin />
+    <link rel="preload"
+        as="style"
+        href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap" />
+
+    <noscript>
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap" />
+    </noscript>
+
     <style>
         body{margin:0px;padding:0px;}
     </style>
