@@ -34,7 +34,8 @@
 		path = window.location.pathname;
 	});
 
-	function handlePageClick(e: any) {
+	//@ts-expect-error idk what type this uses so here it's implicitly any.
+	function handlePageClick(e) {
 		path = e.view.location.pathname;
 	}
 </script>

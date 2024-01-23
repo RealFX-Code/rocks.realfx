@@ -19,7 +19,7 @@ const linksDefined: Array<linkDefinition> = [
 ];
 
 /** @type {import('./$types').RequestHandler} */
-//@ts-ignore
+//@ts-expect-error Params doesn't have a type AFAIK and any type throws a TS error.
 export async function GET({ params }) {
 	let redirectURL = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ';
 

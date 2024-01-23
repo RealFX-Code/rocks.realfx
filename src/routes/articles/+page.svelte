@@ -2,26 +2,6 @@
 	export let data;
 </script>
 
-<!--
-    		<li>
-            <fieldset>
-                <legend>
-                    <h2>
-                        <a href={post.path}>
-                            {post.meta.title}
-                        </a>
-                    </h2>
-                </legend>
-                <p>
-                    {post.meta.desc}
-                </p>
-                <small>
-                    Published: {post.meta.date}
-                </small>
-            </fieldset>
-		</li>
--->
-
 <h1>Articles</h1>
 
 <ul>
@@ -60,7 +40,8 @@
 		font-size: 1.125rem;
 	}
 
-	article > hr {
+	article > hr,
+	ul > hr {
 		height: 1px;
 		border: 0;
 		border-top: 1px solid var(--fg-1);
