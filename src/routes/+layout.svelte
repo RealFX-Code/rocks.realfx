@@ -2,7 +2,7 @@
 	import NavBar from '../components/NavBar.svelte';
 	import Footer from '../components/Footer.svelte';
 
-	import '../colors.css';
+	import '../global.css';
 </script>
 
 <svelte:head>
