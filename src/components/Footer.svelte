@@ -5,7 +5,9 @@
 <footer>
 	<div class="grid grid-2-horiz">
 		<h1 id="webname">
-			<strong> www.realfx.rocks </strong>
+			<a href="www.realfx.rocks">
+				<strong> www.realfx.rocks </strong>
+			</a>
 		</h1>
 		<div class="grid grid-2-vert">
 			<div class="copy center">
@@ -18,18 +20,16 @@
 					<p>This site is powered by:</p>
 					<ul>
 						<li>
-							<span>SvelteKit</span>
+							<a href="https://kit.svelte.dev/"> SvelteKit </a>
 						</li>
 						<li>
-							<span>Cloudflare Pages</span>
+							<a href="https://pages.cloudflare.com/"> Cloudflare Pages </a>
 						</li>
 						<li>
-							<span>Plausible</span>
+							<a href="https://plausible.io/"> Plausible </a>
 						</li>
 						<li>
-							<a href="https://feathericons.com/">
-								FeatherIcons
-							</a>
+							<a href="https://feathericons.com/"> FeatherIcons </a>
 						</li>
 					</ul>
 				</div>
