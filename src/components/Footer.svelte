@@ -26,6 +26,11 @@
 						<li>
 							<span>Plausible</span>
 						</li>
+						<li>
+							<a href="https://feathericons.com/">
+								FeatherIcons
+							</a>
+						</li>
 					</ul>
 				</div>
 			</div>
