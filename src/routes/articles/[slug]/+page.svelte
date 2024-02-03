@@ -24,7 +24,12 @@
 	}
 
 	article > section > p {
+		font-size: 2rem;
+	}
+
+	article {
 		font-size: 1.5rem;
+		line-height: 2rem;
 	}
 
 	article > hr {
