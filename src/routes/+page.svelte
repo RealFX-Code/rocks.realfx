@@ -14,15 +14,15 @@
 	}
 
 	let ThankYouMessage: IMessage = {
-		content: 'wow thankyoou i like you #transgener',
+		content: 'I like this name, Thank you.',
 		duration: 1500,
 		severity: 'info'
 	};
 
 	let DeadnameMessage: IMessage = {
-		content: 'screw you',
+		content: 'Don\'t call me that please.',
 		duration: 1500,
-		severity: 'warning'
+		severity: 'error'
 	};
 
 	function showThankYou() {
