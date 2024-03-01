@@ -31,8 +31,12 @@
 	select {
 		display: inline-block;
 		background-color: var(--bg-2);
+		border: none;
+		font-size: x-large;
+		font-weight: bold;
+		box-shadow: 0px 0px 25px var(--bg-2);
 		height: 100%;
 		padding: 0px;
-		margin: auto 4px;
+		margin: auto 12.5px;
 	}
 </style>

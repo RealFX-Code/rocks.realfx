@@ -5,11 +5,31 @@
 
 	--fg-1: #afafaf;
 	--fg-2: #8c8c8c;
+
+	--h1  : 2rem;
+	--h2  : 1.75rem;
+	--p   : 1.5rem;
+
 }
 
 * {
 	font-family: 'Atkinson Hyperlegible', 'Raleway', sans-serif;
 	color: var(--fg-1);
+}
+
+h1,
+select {
+	font-size: var(--h1);
+}
+
+h2 {
+	font-size: var(--h2);
+}
+
+p,
+span,
+a {
+	font-size: var(--p);
 }
 
 body {
