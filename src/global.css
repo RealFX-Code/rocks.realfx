@@ -36,6 +36,15 @@ body {
 	background-color: var(--bg-1);
 }
 
+code {
+	padding: 12px;
+}
+
+/* ignore this please, it's so stupid it hurts */
+code[data-theme="rose-pine"] > span > span {
+	font-family: "JetBrains Mono", monospace;
+}
+
 @media (prefers-color-scheme: light) {
 	/* why didn't I think of this before */
 	:root {

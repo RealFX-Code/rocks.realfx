@@ -1,6 +1,8 @@
 import adapter from '@sveltejs/adapter-auto';
 import preprocess from 'svelte-preprocess';
 
+import { createHighlighter } from '@svelte-dev/pretty-code';
+
 import { mdsvex } from 'mdsvex';
 
 /** @type {import('@sveltejs/kit').Config} */
@@ -12,7 +14,13 @@ const config = {
 	preprocess: [
 		preprocess(),
 		mdsvex({
-			extensions: ['.md']
+			extensions: ['.md'],
+			highlight: {
+				highlighter: createHighlighter({
+				  	keepBackground: true,
+					theme: 'rose-pine'
+				})
+			}
 		})
 	],
 
