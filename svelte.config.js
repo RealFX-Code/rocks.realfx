@@ -17,7 +17,7 @@ const config = {
 			extensions: ['.md'],
 			highlight: {
 				highlighter: createHighlighter({
-				  	keepBackground: true,
+					keepBackground: true,
 					theme: 'rose-pine'
 				})
 			}

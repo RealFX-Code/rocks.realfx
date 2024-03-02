@@ -20,7 +20,7 @@
 	};
 
 	let DeadnameMessage: IMessage = {
-		content: 'Don\'t call me that please.',
+		content: "Don't call me that please.",
 		duration: 1500,
 		severity: 'error'
 	};

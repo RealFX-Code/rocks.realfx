@@ -6,10 +6,9 @@
 	--fg-1: #afafaf;
 	--fg-2: #8c8c8c;
 
-	--h1  : 2rem;
-	--h2  : 1.75rem;
-	--p   : 1.5rem;
-
+	--h1: 2rem;
+	--h2: 1.75rem;
+	--p: 1.5rem;
 }
 
 * {
@@ -41,8 +40,8 @@ code {
 }
 
 /* ignore this please, it's so stupid it hurts */
-code[data-theme="rose-pine"] > span > span {
-	font-family: "JetBrains Mono", monospace;
+code[data-theme='rose-pine'] > span > span {
+	font-family: 'JetBrains Mono', monospace;
 }
 
 @media (prefers-color-scheme: light) {
