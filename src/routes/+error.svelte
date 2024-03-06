@@ -3,8 +3,10 @@
 </script>
 
 <div id="error-container">
-	<fieldset style="width: fit-content">
-		<legend> An error has occured. </legend>
+	<main>
 		<h1>{$page.status}: {$page.error?.message}</h1>
-	</fieldset>
+		<p>
+			Here's a link back to <a href="/">"/"</a>.
+		</p>
+	</main>
 </div>
