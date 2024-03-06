@@ -2,7 +2,7 @@
 	import MessageProvider from '../components/MessageProvider.svelte';
 
 	import NameSelector from '../components/NameSelector.svelte';
-	import type IMessage from "../routes/types";
+	import type IMessage from '../routes/types';
 
 	let names: Array<string> = ['Sometime', 'Leah', 'RealFX', '[deadname]'];
 

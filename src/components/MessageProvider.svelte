@@ -1,5 +1,5 @@
 <script lang="ts">
-	import type IMessage from "../routes/types";
+	import type IMessage from '../routes/types';
 
 	let MessageDataStore: IMessage = {
 		content: 'placeholder info',

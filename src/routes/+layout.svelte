@@ -9,7 +9,12 @@
 	<title>www.realfx.rocks</title>
 
 	<!-- forgive me -->
-	<script defer src="https://analytics.eu.umami.is/script.js" data-website-id="b6f3c066-b2b3-4c6b-9ec2-35f8b32da9ee"></script>
+	<!-- forgive me -->
+	<script
+		defer
+		src="https://analytics.eu.umami.is/script.js"
+		data-website-id="b6f3c066-b2b3-4c6b-9ec2-35f8b32da9ee"
+	></script>
 
 	<link rel="preconnect" href="https://fonts.googleapis.com" crossorigin="true" />
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="true" />
