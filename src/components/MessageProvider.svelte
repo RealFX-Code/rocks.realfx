@@ -1,9 +1,5 @@
 <script lang="ts">
-	interface IMessage {
-		content: string;
-		duration: number;
-		severity?: 'error' | 'warning' | 'info';
-	}
+	import type IMessage from "../routes/types";
 
 	let MessageDataStore: IMessage = {
 		content: 'placeholder info',

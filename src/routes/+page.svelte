@@ -2,16 +2,11 @@
 	import MessageProvider from '../components/MessageProvider.svelte';
 
 	import NameSelector from '../components/NameSelector.svelte';
+	import type IMessage from "../routes/types";
 
 	let names: Array<string> = ['Sometime', 'Leah', 'RealFX', '[deadname]'];
 
 	let messageProvider: MessageProvider;
-
-	interface IMessage {
-		content: string;
-		duration: number;
-		severity?: 'error' | 'warning' | 'info';
-	}
 
 	let ThankYouMessage: IMessage = {
 		content: 'I like this name, Thank you.',
