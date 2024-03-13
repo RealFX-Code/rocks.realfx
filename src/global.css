@@ -35,6 +35,11 @@ body {
 	background-color: var(--bg-1);
 }
 
+pre {
+	width: 100%;
+	overflow-x: scroll;
+}
+
 code {
 	padding: 12px;
 }
