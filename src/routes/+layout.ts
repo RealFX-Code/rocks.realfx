@@ -1,11 +1,11 @@
 import { apiPlugin, storyblokInit, useStoryblokApi } from '@storyblok/svelte';
 import type { LayoutLoad } from './$types';
 
-import Page from '$lib/components/sb/Page.svelte';
-import Text from '$lib/components/sb/Text.svelte';
-import Divider from '$lib/components/sb/Divider.svelte';
-import Heading from '$lib/components/sb/Heading.svelte';
-import Space from '$lib/components/sb/Space.svelte';
+import Divider from '$lib/components/bloks/Divider.svelte';
+import Heading from '$lib/components/bloks/Heading.svelte';
+import Page    from '$lib/components/bloks/Page.svelte';
+import Space   from '$lib/components/bloks/Space.svelte';
+import Text    from '$lib/components/bloks/Text.svelte';
 
 export const load = (async () => {
     storyblokInit({
