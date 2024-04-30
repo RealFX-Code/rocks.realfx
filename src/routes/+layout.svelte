@@ -50,7 +50,7 @@
 
 <main>
     <!-- remove when done-->
-    <Banner position="absolute" bannerType="bottom">
+    <Banner position="fixed" bannerType="bottom">
         <P>This website is under construction, Expect some features to be broken / missing.</P>
     </Banner>
     <Navbar class="bg-primary-50 dark:bg-primary-800">

@@ -6,6 +6,8 @@ import Heading from '$lib/components/bloks/Heading.svelte';
 import Page    from '$lib/components/bloks/Page.svelte';
 import Space   from '$lib/components/bloks/Space.svelte';
 import Text    from '$lib/components/bloks/Text.svelte';
+import Codeblock from "$lib/components/bloks/Codeblock.svelte";
+import image from "$lib/components/bloks/image.svelte";
 
 export const load = (async () => {
     storyblokInit({
@@ -17,7 +19,9 @@ export const load = (async () => {
             heading: Heading,
             space: Space,
             page: Page,
-            text: Text
+            text: Text,
+            Image: image,
+            codeblock: Codeblock
         }
     });
     const storyblokApi = await useStoryblokApi();
