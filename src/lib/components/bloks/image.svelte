@@ -1,5 +1,4 @@
 <script>
-
     import { storyblokEditable } from '@storyblok/svelte';
 
     import { A, P } from 'flowbite-svelte';
@@ -14,24 +13,13 @@
      */
     // @ts-ignore
     let imgSrc = blok.src?.filename?.toString();
-
 </script>
 
-<div
-    use:storyblokEditable={blok}
-    class="max-w-full"
->
-    <A
-        href={imgSrc}
-        target="_blank"
-        rel="noreferrer noopener"
-    >
-        <img
-            src={imgSrc}
-            alt="img"
-        >
+<div use:storyblokEditable={blok} class="max-w-full">
+    <A href={imgSrc} target="_blank" rel="noreferrer noopener">
+        <img src={imgSrc} alt="img" />
     </A>
-    <P class="text-sm p-1">
+    <P class="p-1 text-sm">
         {blok.alt?.toString()}
     </P>
 </div>

@@ -1,5 +1,7 @@
 /** @type {import('tailwindcss').Config}*/
 
+const defaultTheme = require('tailwindcss/defaultTheme');
+
 const primary = {
     50: '#ffffff',
     100: '#ffdfe9',
@@ -25,6 +27,10 @@ const config = {
 
     theme: {
         extend: {
+            fontFamily: {
+                sans: ['Atkinson Hyperlegible', ...defaultTheme.fontFamily.sans],
+                mono: ['JetBrains Mono', ...defaultTheme.fontFamily.mono]
+            },
             colors: {
                 primary: primary,
                 gray: primary

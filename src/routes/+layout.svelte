@@ -46,6 +46,11 @@
         src="https://eu.umami.is/script.js"
         data-website-id="b6f3c066-b2b3-4c6b-9ec2-35f8b32da9ee"
     ></script>
+    <link rel="preconnect" href="https://fonts.bunny.net" />
+    <link
+        href="https://fonts.bunny.net/css?family=atkinson-hyperlegible:400,700|jetbrains-mono:500"
+        rel="stylesheet"
+    />
 </svelte:head>
 
 <main>
