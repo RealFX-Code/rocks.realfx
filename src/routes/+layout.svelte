@@ -88,7 +88,7 @@
                 <DarkMode
                     class="m-4 w-min rounded-lg border p-2.5 text-sm text-primary-500 hover:bg-primary-100 focus:outline-none dark:border-primary-400 dark:text-primary-400 dark:hover:bg-primary-700"
                 />
-                <FooterLink href="https://eu.umami.is/share/Ozvwzdl4vYAWCAxX/www.realfx.rocks"
+                <FooterLink href="https://cloud.umami.is/share/d0HQmHbPbt9EiV29/www.realfx.rocks"
                     >Tracking Information</FooterLink
                 >
                 <FooterLink href="https://github.com/RealFX-Code/rocks.realfx"
