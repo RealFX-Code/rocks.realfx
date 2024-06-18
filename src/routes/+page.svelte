@@ -1,4 +1,5 @@
 <script lang="ts">
+    import MetaHeaders from '$lib/components/MetaHeaders.svelte';
     import NameBlinker from '$lib/components/NameBlinker.svelte';
     import { Heading, P, A, Card } from 'flowbite-svelte';
 
@@ -11,6 +12,10 @@
 	let age = calculateAge(new Date('2008-04-02'));
 
 </script>
+
+<svelte:head>
+    <MetaHeaders />
+</svelte:head>
 
 <!-- Heading -->
 <section class="mx-auto w-[calc(100%-10%)] sm:w-[calc(100%-35%)]">

@@ -10,7 +10,22 @@
         TableHead,
         TableHeadCell
     } from 'flowbite-svelte';
+
+    import type iMeta from '$lib/types/IMeta';
+    import MetaHeaders from '$lib/components/MetaHeaders.svelte';
+
+    let meta : iMeta = {
+        title: "Contact",
+        description: "Here's how to contact me."
+    }
+
 </script>
+
+<svelte:head>
+    <MetaHeaders
+        meta={meta}
+    />
+</svelte:head>
 
 <!-- Heading -->
 <section class="mx-auto w-[calc(100%-10%)] sm:w-[calc(100%-35%)]">

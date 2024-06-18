@@ -1,8 +1,16 @@
 <script lang="ts">
-    1;
     import { Heading, Card } from 'flowbite-svelte';
 
     export let data;
+
+    import type iMeta from '$lib/types/IMeta.js';
+    import MetaHeaders from '$lib/components/MetaHeaders.svelte';
+
+    let meta : iMeta = {
+        title: "Article directory",
+        description: "Here's all the public articles I've written."
+    }
+
 </script>
 
 <section class="mx-auto w-[calc(100%-10%)] sm:w-[calc(100%-35%)]">
