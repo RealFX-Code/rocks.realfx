@@ -21,17 +21,15 @@
 
     const easingDuration = interval / 4;
 
-    let isChromium : boolean;
-    onMount(function(){
+    let isChromium: boolean;
+    onMount(function () {
         //@ts-expect-error Window isn't defined on the server and thus throws an LSP error.
         isChromium = !!window.chrome;
 
-        if (!isChromium){
-            console.warn("Non-chromium browser detected, Name blinker is disabled.");
+        if (!isChromium) {
+            console.warn('Non-chromium browser detected, Name blinker is disabled.');
         }
-
-    })
-
+    });
 </script>
 
 {#if isChromium}

@@ -19,27 +19,23 @@
      */
     let title;
 
-    onMount(function(){
+    onMount(function () {
         // @ts-ignore
         url = blok?.link?.url;
-        
+
         // @ts-ignore
         title = blok?.title;
-
-    })
-
+    });
 </script>
 
 <div use:storyblokEditable={blok}>
     {#key url}
-        {#if url}            
+        {#if url}
             <A href={url}>
                 {title}
             </A>
         {:else}
-            <P>
-                Loading link...
-            </P>
+            <P>Loading link...</P>
         {/if}
     {/key}
 </div>

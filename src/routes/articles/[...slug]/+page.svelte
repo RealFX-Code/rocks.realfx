@@ -1,4 +1,4 @@
-<script lang=ts>
+<script lang="ts">
     import { onMount } from 'svelte';
     import { useStoryblokBridge, StoryblokComponent } from '@storyblok/svelte';
     import MetaHeaders from '$lib/components/MetaHeaders.svelte';
@@ -6,11 +6,11 @@
 
     export let data;
 
-    let meta : iMeta = {
-        title: "Loading...",
-        description: "Loading..."
-    }
-    
+    let meta: iMeta = {
+        title: 'Loading...',
+        description: 'Loading...'
+    };
+
     onMount(() => {
         if (data.story) {
             meta.title = data.story.full_slug;
@@ -18,11 +18,10 @@
             useStoryblokBridge(data.story.id, (newStory) => (data.story = newStory));
         }
     });
-
 </script>
 
 <svelte:head>
-    <MetaHeaders meta={meta} />
+    <MetaHeaders {meta} />
 </svelte:head>
 
 <section class="mx-auto w-[calc(100%-10%)] sm:w-[calc(100%-35%)]">

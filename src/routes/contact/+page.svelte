@@ -14,17 +14,14 @@
     import type iMeta from '$lib/types/IMeta';
     import MetaHeaders from '$lib/components/MetaHeaders.svelte';
 
-    let meta : iMeta = {
-        title: "Contact",
+    let meta: iMeta = {
+        title: 'Contact',
         description: "Here's how to contact me."
-    }
-
+    };
 </script>
 
 <svelte:head>
-    <MetaHeaders
-        meta={meta}
-    />
+    <MetaHeaders {meta} />
 </svelte:head>
 
 <!-- Heading -->

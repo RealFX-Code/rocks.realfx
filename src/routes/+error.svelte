@@ -6,17 +6,14 @@
     import type iMeta from '$lib/types/IMeta';
     import MetaHeaders from '$lib/components/MetaHeaders.svelte';
 
-    let meta : iMeta = {
-        title:"404 :(",
+    let meta: iMeta = {
+        title: '404 :(',
         description: "The page you're looking for doesn't exist. (yet)"
-    }
-
+    };
 </script>
 
 <svelte:head>
-    <MetaHeaders
-        meta={meta}
-    />
+    <MetaHeaders {meta} />
 </svelte:head>
 
 <section class="mx-auto w-[calc(100%-10%)] sm:w-[calc(100%-35%)]">

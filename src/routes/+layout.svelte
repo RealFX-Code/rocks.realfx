@@ -38,11 +38,9 @@
             href: '/contact'
         }
     ];
-
 </script>
 
 <svelte:head>
-
     <script
         defer
         src="https://eu.umami.is/script.js"
@@ -96,7 +94,9 @@
                 <FooterLink href="https://github.com/RealFX-Code/rocks.realfx"
                     >Website Repo</FooterLink
                 >
-                <FooterLink href="https://unsplash.com/photos/a-black-and-white-photo-of-a-curved-object-16KAzCV7UVI">
+                <FooterLink
+                    href="https://unsplash.com/photos/a-black-and-white-photo-of-a-curved-object-16KAzCV7UVI"
+                >
                     OpenGraph image
                 </FooterLink>
             </FooterLinkGroup>
