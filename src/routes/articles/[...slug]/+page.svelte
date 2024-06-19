@@ -1,8 +1,8 @@
 <script lang="ts">
-    import { onMount } from 'svelte';
     import { useStoryblokBridge, StoryblokComponent } from '@storyblok/svelte';
     import MetaHeaders from '$lib/components/MetaHeaders.svelte';
     import type iMeta from '$lib/types/IMeta';
+    import { onMount } from 'svelte';
 
     export let data;
 
@@ -10,14 +10,21 @@
         title: 'Loading...',
         description: 'Loading...'
     };
+    
+    if (data.story) {
+        meta.title = data.story.full_slug;
+        meta.description = data.story.name;
+    } else {
+        meta.title = "Nothing";
+        meta.description = "No such article was found, Maybe you're looking for something hidden? Well, You won't find it here."
+    }
 
-    onMount(() => {
-        if (data.story) {
-            meta.title = data.story.full_slug;
-            meta.description = data.story.name;
+    onMount(function(){
+        if(data.story){
             useStoryblokBridge(data.story.id, (newStory) => (data.story = newStory));
         }
     });
+
 </script>
 
 <svelte:head>

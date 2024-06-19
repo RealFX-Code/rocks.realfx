@@ -12,6 +12,12 @@
     };
 </script>
 
+<svelte:head>
+    <MetaHeaders
+        {meta}
+    />
+</svelte:head>
+
 <section class="mx-auto w-[calc(100%-10%)] sm:w-[calc(100%-35%)]">
     <Heading class="text-left" style="margin-bottom: 5rem;">Articles</Heading>
 
