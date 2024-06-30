@@ -10,21 +10,21 @@
         title: 'Loading...',
         description: 'Loading...'
     };
-    
+
     if (data.story) {
         meta.title = data.story.full_slug;
         meta.description = data.story.name;
     } else {
-        meta.title = "Nothing";
-        meta.description = "No such article was found, Maybe you're looking for something hidden? Well, You won't find it here."
+        meta.title = 'Nothing';
+        meta.description =
+            "No such article was found, Maybe you're looking for something hidden? Well, You won't find it here.";
     }
 
-    onMount(function(){
-        if(data.story){
+    onMount(function () {
+        if (data.story) {
             useStoryblokBridge(data.story.id, (newStory) => (data.story = newStory));
         }
     });
-
 </script>
 
 <svelte:head>

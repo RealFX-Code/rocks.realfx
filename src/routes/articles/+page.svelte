@@ -13,9 +13,7 @@
 </script>
 
 <svelte:head>
-    <MetaHeaders
-        {meta}
-    />
+    <MetaHeaders {meta} />
 </svelte:head>
 
 <section class="mx-auto w-[calc(100%-10%)] sm:w-[calc(100%-35%)]">
