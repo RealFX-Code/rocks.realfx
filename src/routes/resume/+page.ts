@@ -1,6 +1,6 @@
-export async function load({ params, parent }) {
+export async function load({ parent }) {
     const { storyblokApi } = await parent();
-    let path = 'cdn/stories/resume';
+    const path = 'cdn/stories/resume';
     const dataStory = await storyblokApi.get(path, {
         version: 'draft'
     });

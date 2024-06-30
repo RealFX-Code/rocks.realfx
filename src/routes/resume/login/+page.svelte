@@ -1,19 +1,19 @@
 <script lang="ts">
-    import type { PageData } from './$types';
-
     import { Label, Input, Button, Heading, P } from 'flowbite-svelte';
+
+    import type iMeta from '$lib/types/IMeta';
+    import MetaHeaders from '$lib/components/MetaHeaders.svelte';
+
+    import pkg from 'js-sha3';
+    const { sha3_512 } = pkg;
 
     // init very vulnerable authentication
     let password: string;
 
     function checkAuth() {
-        let checkRequest = new Request(
-            //@ts-expect-error Function imported below.
-            '/api/pw/' + sha3_512(password)
-        );
-        let checkResponse = fetch(checkRequest).then(function (value) {
+        let checkRequest = new Request('/api/pw/' + sha3_512(password));
+        fetch(checkRequest).then(function (value) {
             if (value.status == 200) {
-                //@ts-expect-error Function imported below.
                 window.location.href = '/resume?a=' + sha3_512(password);
                 return;
             }
@@ -27,10 +27,15 @@
             return;
         });
     }
+
+    const meta: iMeta = {
+        title: 'Authorization Required.',
+        description: 'Enter your given password.'
+    };
 </script>
 
 <svelte:head>
-    <script async src="https://cdn.jsdelivr.net/gh/emn178/js-sha3/build/sha3.min.js"></script>
+    <MetaHeaders {meta} />
 </svelte:head>
 
 <section class="mx-auto w-[calc(100%-10%)] sm:w-[calc(100%-35%)]">

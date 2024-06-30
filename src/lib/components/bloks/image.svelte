@@ -11,7 +11,7 @@
     /**
      * @type {string}
      */
-    // @ts-ignore
+    //@ts-expect-error LSP errors suck balls
     let imgSrc = blok.src?.filename?.toString();
 </script>
 

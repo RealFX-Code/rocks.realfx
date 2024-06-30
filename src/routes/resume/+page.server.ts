@@ -3,7 +3,7 @@ import type { PageServerLoad } from './$types';
 
 import { SECRET_PASSWORD } from '$env/static/private';
 
-import pkg from "js-sha3";
+import pkg from 'js-sha3';
 const { sha3_512 } = pkg;
 
 export const load = (async (params) => {
@@ -12,7 +12,7 @@ export const load = (async (params) => {
         throw redirect(301, '/resume/login');
     }
 
-    let password = params.url.searchParams.get('a');
+    const password = params.url.searchParams.get('a');
 
     if (password == sha3_512(SECRET_PASSWORD)) {
         // Retutning an empty object equals a success.

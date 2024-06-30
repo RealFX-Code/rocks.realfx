@@ -1,6 +1,6 @@
 import { SECRET_PASSWORD } from '$env/static/private';
 
-import pkg from "js-sha3";
+import pkg from 'js-sha3';
 const { sha3_512 } = pkg;
 
 export const GET = async ({ params }) => {
