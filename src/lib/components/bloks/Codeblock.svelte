@@ -1,12 +1,9 @@
-<script>
-    import { storyblokEditable } from '@storyblok/svelte';
+<script lang="ts">
+    import { storyblokEditable, type SbBlokData } from '@storyblok/svelte';
 
     import { Span } from 'flowbite-svelte';
 
-    /**
-     * @type {import("@storyblok/svelte").SbBlokData}
-     */
-    export let blok;
+    export let blok: SbBlokData;
 </script>
 
 <div use:storyblokEditable={blok}>

@@ -1,5 +1,5 @@
 <script lang="ts">
-    import { storyblokEditable } from '@storyblok/svelte';
+    import { storyblokEditable, type SbBlokData } from '@storyblok/svelte';
 
     import { A, P } from 'flowbite-svelte';
     import { onMount } from 'svelte';

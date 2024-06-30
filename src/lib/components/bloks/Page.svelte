@@ -1,13 +1,12 @@
-<script>
-    // eslint-disable-next-line
-    // @ts-nocheck
+<script lang="ts">
+    // Look @ line 14 for explanation.
 
-    import { storyblokEditable, StoryblokComponent } from '@storyblok/svelte';
+    //eslint-ignore-next-line
+    //@ts-nocheck
 
-    /**
-     * @type {import("@storyblok/svelte").SbBlokData}
-     */
-    export let blok;
+    import { storyblokEditable, StoryblokComponent, type SbBlokData } from '@storyblok/svelte';
+
+    export let blok: SbBlokData;
 </script>
 
 {#key blok}
