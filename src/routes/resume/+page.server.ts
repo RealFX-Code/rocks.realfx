@@ -3,9 +3,8 @@ import type { PageServerLoad } from './$types';
 
 import { SECRET_PASSWORD } from '$env/static/private';
 
-import sha3_512 from 'js-sha3';
-// what the fuck in the name of javascript is this, kill me.
-const hash = sha3_512.sha3_512;
+import pkg from "js-sha3";
+const { sha3_512 } = pkg;
 
 export const load = (async (params) => {
     if (!params.url.searchParams.has('a')) {
@@ -15,7 +14,7 @@ export const load = (async (params) => {
 
     let password = params.url.searchParams.get('a');
 
-    if (password == hash(SECRET_PASSWORD)) {
+    if (password == sha3_512(SECRET_PASSWORD)) {
         // Retutning an empty object equals a success.
         return {};
     } else {
