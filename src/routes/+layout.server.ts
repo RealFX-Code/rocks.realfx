@@ -1,5 +1,4 @@
-import { apiPlugin, storyblokInit, useStoryblokApi } from '@storyblok/svelte';
-import type { LayoutLoad } from './$types';
+import { apiPlugin, storyblokInit } from '@storyblok/svelte';
 
 import Divider from '$lib/components/bloks/Divider.svelte';
 import Heading from '$lib/components/bloks/Heading.svelte';
@@ -10,7 +9,7 @@ import Link from '$lib/components/bloks/link.svelte';
 import Codeblock from '$lib/components/bloks/Codeblock.svelte';
 import image from '$lib/components/bloks/image.svelte';
 
-export const load = (async () => {
+export const load = async () => {
     storyblokInit({
         accessToken: 'WComsuHRt7eJxyoQt0t9dgtt',
         use: [apiPlugin],
@@ -26,9 +25,11 @@ export const load = (async () => {
             article_link: Link
         }
     });
-    const storyblokApi = await useStoryblokApi();
 
-    return {
+    /* const storyblokApi = await useStoryblokApi(); */
+
+    /* return {
         storyblokApi: storyblokApi
-    };
-}) satisfies LayoutLoad;
+    }; */
+    return;
+};

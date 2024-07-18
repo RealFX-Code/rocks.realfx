@@ -6,7 +6,8 @@ const config = {
     preprocess: [vitePreprocess({})],
 
     alias: {
-        '@storyblok/svelte': './node_modules/@storyblok/svelte'
+        '@storyblok/svelte': './node_modules/@storyblok/svelte',
+        $lib: './src/lib'
     },
 
     kit: {
