@@ -16,6 +16,7 @@
         FooterLinkGroup,
         FooterLink
     } from 'flowbite-svelte';
+    import { onMount } from 'svelte';
 
     $: activeUrl = $page.url.pathname;
 
@@ -38,9 +39,19 @@
             href: '/contact'
         }
     ];
+
+    let darkModeEnabled : boolean;
+
+    onMount(function(){
+        darkModeEnabled = document.getElementsByTagName("html")[0].classList.contains("dark");
+    })
+
 </script>
 
 <svelte:head>
+    {#if darkModeEnabled}
+        <meta name="darkreader-lock">
+    {/if}
     <script
         defer
         src="https://eu.umami.is/script.js"

@@ -13,11 +13,11 @@ export const load = async function ({ params }) {
     }
 
     // Actual fetching
-    const dataStory = await storyblokApi.get(path, {
+    const dataStory = storyblokApi.get(path, {
         version: 'draft'
     });
 
     return {
-        story: dataStory.data.story
+        story: (await dataStory).data.story
     };
 };
