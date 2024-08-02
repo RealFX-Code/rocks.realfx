@@ -43,6 +43,7 @@
     let darkModeEnabled : boolean;
 
     onMount(function(){
+        // janktastic
         darkModeEnabled = document.getElementsByTagName("html")[0].classList.contains("dark");
     })
 
