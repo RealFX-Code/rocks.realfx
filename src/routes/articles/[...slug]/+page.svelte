@@ -18,6 +18,8 @@
         }
     });
 
+    $: console.log(data)
+
     const content = data?.story?.content;
 </script>
 

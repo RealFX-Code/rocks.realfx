@@ -1,7 +1,11 @@
-import { getStoryblokApi } from '@storyblok/svelte';
+import { useStoryblok } from '$lib/sbload';
+import { useStoryblokApi } from '@storyblok/svelte';
 
 export const load = async function ({ params }) {
-    const storyblokApi = getStoryblokApi();
+
+    await useStoryblok();
+
+    const storyblokApi = useStoryblokApi();
     const slug = params.slug;
 
     // Path

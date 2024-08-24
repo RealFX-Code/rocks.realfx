@@ -1,4 +1,4 @@
-import { apiPlugin, storyblokInit } from '@storyblok/svelte';
+/* import { apiPlugin, storyblokInit } from '@storyblok/svelte';
 
 import Divider from '$lib/components/bloks/Divider.svelte';
 import Heading from '$lib/components/bloks/Heading.svelte';
@@ -25,11 +25,5 @@ export const load = async () => {
             article_link: Link
         }
     });
-
-    /* const storyblokApi = await useStoryblokApi(); */
-
-    /* return {
-        storyblokApi: storyblokApi
-    }; */
     return;
-};
+}; */
