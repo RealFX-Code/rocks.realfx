@@ -1,6 +1,7 @@
 import { useStoryblok } from '$lib/sbload';
 import { useStoryblokApi } from '@storyblok/svelte';
 
+//@ts-expect-error ambigous any type how about you suck my nuts
 export const load = async function ({ params }) {
 
     await useStoryblok();
@@ -17,11 +18,11 @@ export const load = async function ({ params }) {
     }
 
     // Actual fetching
-    const dataStory = storyblokApi.get(path, {
+    const dataStory = await storyblokApi.get(path, {
         version: 'draft'
     });
 
     return {
-        story: (await dataStory).data.story
+        story: dataStory.data.story
     };
 };
