@@ -29,8 +29,8 @@
         I'm autistic, and technology (anything computers) is my hyperfixation, so I spend all of my time
         on it. Mainly I like to play with obscure computers, and make devices to stuff they weren't intended
         to, like the obligatory neofetch!<br />
-        If you're against LGBTQ+ in any way, GTFO. I'm transgender and strongly want to fight for transgender
-        rights.
+        If you're against LGBTQ+ in any way, GTFO. I strongly fight for transgender
+        rights, especially among those who can't transition to live their life to the fullest.
     </P>
     <br />
     <Card class="w-max max-w-fit bg-primary-50 dark:border-primary-700 dark:bg-primary-800">
